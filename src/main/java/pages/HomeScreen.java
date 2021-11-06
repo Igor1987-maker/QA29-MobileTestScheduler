@@ -6,19 +6,23 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomeScreen extends BaseScreen{
+public class HomeScreen extends BaseScreen {
     public HomeScreen(AppiumDriver<MobileElement> driver) {
         super(driver);
     }
+
     @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/fab_main']")
     MobileElement fabAdd;
 
-    public boolean isFabAddButtonPresent(){
-        new WebDriverWait(driver,30)
+    public boolean isFabAddButtonPresent() {
+        new WebDriverWait(driver, 30)
                 .until(ExpectedConditions.visibilityOf(fabAdd));
         return fabAdd.isDisplayed();
     }
 
+    public void logOut() {
 
+
+    }
 
 }

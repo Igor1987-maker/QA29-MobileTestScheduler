@@ -5,8 +5,11 @@ import configuration.MyDataProvider;
 import dto.Credentials;
 import dto.FieldsWithoutLombok;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.SplashScreen;
+
+
+
 
 public class LoginTest extends ConfigScheduler {
 
@@ -26,7 +29,9 @@ public class LoginTest extends ConfigScheduler {
 
     @Test(dataProvider = "dataForLoginTest",dataProviderClass = MyDataProvider.class)
     public  void loginTestWithCredentials(String email,String password){
-     //Credentials credentials = new Credentials();
+      /* Credentials credentials = Credentials.builder()
+                .email(email)
+                .password(password);*/
 
         FieldsWithoutLombok fwl = new FieldsWithoutLombok()
                 .setEmail(email)
