@@ -1,12 +1,13 @@
 package configuration;
 
 //"platformName": "Android",
-//        "deviceName": "Nex",
-//        "platformVersion": "8.0",
-//        "appPackage": "com.example.svetlana.scheduler",
-//        "appActivity": ".presentation.splashScreen.SplashScreenActivity"
+//"deviceName": "Galaxy",
+//"platformVersion": "8.1",
+//"appPackage": "com.example.svetlana.scheduler",
+//"appActivity": ".presentation.splashScreen.SplashScreenActivity"
 
 
+import dto.Credentials;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -25,8 +26,8 @@ public class ConfigScheduler {
     public void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName","Android");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"8.0");
-        capabilities.setCapability("deviceName", "Nex");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"8.1");
+        capabilities.setCapability("deviceName", "Galaxy");
         capabilities.setCapability("appPackage","com.example.svetlana.scheduler" );
         capabilities.setCapability("appActivity", ".presentation.splashScreen.SplashScreenActivity");
 
@@ -34,5 +35,6 @@ public class ConfigScheduler {
         driver = new AppiumDriver<>(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);
 
     }
+
 
 }
