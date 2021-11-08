@@ -29,7 +29,7 @@ public class LoginTest extends ConfigScheduler {
 
     @Test(dataProvider = "dataForLoginTest",dataProviderClass = MyDataProvider.class)
     public  void loginTestWithCredentials(String email,String password){
-      /* Credentials credentials = Credentials.builder()
+       /*Credentials credentials = Credentials.builder()
                 .email(email)
                 .password(password);*/
 

@@ -13,6 +13,11 @@ public class HomeScreen extends BaseScreen {
 
     @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/fab_main']")
     MobileElement fabAdd;
+    @FindBy(xpath = "//android.widget.ImageButton[@content-desc='Open']")
+    MobileElement menuOpen;
+    @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_logout']")
+    MobileElement logOutButton;
+
 
     public boolean isFabAddButtonPresent() {
         new WebDriverWait(driver, 30)
@@ -20,9 +25,16 @@ public class HomeScreen extends BaseScreen {
         return fabAdd.isDisplayed();
     }
 
-    public void logOut() {
 
-
+    public HomeScreen clickMenuButton() {
+        new WebDriverWait(driver, 20)
+                .until(ExpectedConditions.visibilityOf(menuOpen));
+        menuOpen.click();
+        return this;
     }
 
+    public LoginScreen clickLogOutButton() {
+        logOutButton.click();
+        return new LoginScreen(driver);
+    }
 }

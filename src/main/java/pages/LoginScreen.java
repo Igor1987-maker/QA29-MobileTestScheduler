@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginScreen extends BaseScreen{
 
 
+
+
     public LoginScreen(AppiumDriver<MobileElement> driver) {
         super(driver);
     }
@@ -52,6 +54,10 @@ public LoginScreen fillEmail(String email){
         return this;
 
     }
-
+    public boolean isLogitButtonPresent(){
+    new WebDriverWait(driver,20)
+            .until(ExpectedConditions.visibilityOf(loginButton));
+    return loginButton.isDisplayed();
+    }
 
 }

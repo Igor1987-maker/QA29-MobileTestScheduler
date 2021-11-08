@@ -2,11 +2,10 @@ package dto;
 
 import lombok.*;
 
-
-@Builder
 @Setter
 @Getter
 @ToString
+@Builder
 
 public class Credentials {
     String email;
