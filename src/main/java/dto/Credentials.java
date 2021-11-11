@@ -7,6 +7,7 @@ import lombok.*;
 @ToString
 @Builder
 
+
 public class Credentials {
     String email;
     String password;

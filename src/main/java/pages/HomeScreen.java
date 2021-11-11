@@ -17,6 +17,7 @@ public class HomeScreen extends BaseScreen {
     MobileElement menuOpen;
     @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_logout']")
     MobileElement logOutButton;
+   // @FindBy(xpath = )
 
 
     public boolean isFabAddButtonPresent() {

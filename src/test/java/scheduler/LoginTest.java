@@ -19,7 +19,7 @@ public class LoginTest extends ConfigScheduler {
         boolean isFabPresent = new SplashScreen(driver)
                 .checkVersion("0.0.3")
                 .fillEmail("IgorP@gmail.ru")
-                .fillPassword("As1234!~")
+                .fillPassword("As")
                 .clickLoginButton()
                 .skipWizard()
                 .isFabAddButtonPresent();
@@ -29,9 +29,10 @@ public class LoginTest extends ConfigScheduler {
 
     @Test(dataProvider = "dataForLoginTest",dataProviderClass = MyDataProvider.class)
     public  void loginTestWithCredentials(String email,String password){
-       /*Credentials credentials = Credentials.builder()
+       Credentials credentials = Credentials.builder()
                 .email(email)
-                .password(password);*/
+                .password(password)
+               .build();
 
         FieldsWithoutLombok fwl = new FieldsWithoutLombok()
                 .setEmail(email)

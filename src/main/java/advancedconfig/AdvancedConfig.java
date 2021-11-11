@@ -1,19 +1,12 @@
-package configuration;
+package advancedconfig;
 
-//"platformName": "Android",
-//"deviceName": "Galaxy",
-//"platformVersion": "8.1",
-//"appPackage": "com.example.svetlana.scheduler",
-//"appActivity": ".presentation.splashScreen.SplashScreenActivity"
-
-
-import dto.Credentials;
+import configuration.AppiumListener;
+import configuration.ConfigScheduler;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.events.EventFiringWebDriverFactory;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
@@ -23,12 +16,11 @@ import org.testng.annotations.BeforeSuite;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
-public class ConfigScheduler {
+public class AdvancedConfig {
 
     protected AppiumDriver<MobileElement> driver;
-    Logger logger = LoggerFactory.getLogger(ConfigScheduler.class);
+    Logger logger = LoggerFactory.getLogger(AdvancedConfig.class);
 
     @BeforeSuite
 
@@ -37,16 +29,13 @@ public class ConfigScheduler {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
         capabilities.setCapability("deviceName", "Galaxy");
-        capabilities.setCapability("appPackage", "com.example.svetlana.scheduler");
-        capabilities.setCapability("appActivity", ".presentation.splashScreen.SplashScreenActivity");
+        capabilities.setCapability("appPackage", "com.h6ah4i.android.example.advrecyclerview");
+        capabilities.setCapability("appActivity", ".launcher.MainActivity");
 
 
         driver = new AppiumDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-      //  driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver, new AppiumListener());
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver, new AppiumListener());
         logger.info("Start super scheduler");
-
-
     }
 
     @BeforeMethod
@@ -60,5 +49,4 @@ public class ConfigScheduler {
 
         logger.info("Stop method ------>" + m.getName());
     }
-
 }
