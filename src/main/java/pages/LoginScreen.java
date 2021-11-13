@@ -1,5 +1,6 @@
 package pages;
 
+import dto.Credentials;
 import dto.FieldsWithoutLombok;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -58,6 +59,15 @@ public LoginScreen fillEmail(String email){
     new WebDriverWait(driver,20)
             .until(ExpectedConditions.visibilityOf(loginButton));
     return loginButton.isDisplayed();
+    }
+    public WizardScreen loginComplex(Credentials credentials){
+        new WebDriverWait(driver,20)
+                .until(ExpectedConditions.visibilityOf(emailEditText));
+        type(emailEditText, credentials.getEmail());
+        type(passwordEditText, credentials.getPassword());
+        hideKeyboard();
+        loginButton.click();
+        return new WizardScreen(driver);
     }
 
 }

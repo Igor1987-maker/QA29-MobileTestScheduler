@@ -1,0 +1,15 @@
+15:55:40 INFO  - Start super scheduler
+15:55:40 INFO  - MethodswipeIconTeststarted
+15:55:41 INFO  - Element was foundBy.xpath: //androidx.appcompat.app.ActionBar.Tab[@content-desc='Swipe']/android.widget.TextView
+15:55:42 INFO  - Element found --->By.xpath: //androidx.appcompat.app.ActionBar.Tab[@content-desc='Swipe']/android.widget.TextView
+15:55:43 INFO  - Element was foundBy.xpath: [//*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]
+15:55:44 INFO  - Element found --->By.xpath: [//*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]
+15:55:44 INFO  - Something went wrongjava.lang.IllegalArgumentException: Unable to compile '[//*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]'. See Cause.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3UOK3PE', ip: '10.100.102.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .launcher.MainActivity, appPackage: com.h6ah4i.android.example...., databaseEnabled: false, desired: {appActivity: .launcher.MainActivity, appPackage: com.h6ah4i.android.example...., deviceName: Galaxy, platformName: android, platformVersion: 8.1}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1136, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 62da025f-cbb0-4d70-95e1-0be511de4c60
+*** Element info: {Using=xpath, value=[//*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]}
+15:55:45 INFO  - Stop method ------>swipeIconTest

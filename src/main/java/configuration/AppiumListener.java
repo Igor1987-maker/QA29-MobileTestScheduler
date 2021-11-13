@@ -1,15 +1,16 @@
 package configuration;
 
+import com.google.common.io.Files;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.events.api.general.AppiumWebDriverEventListener;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 import pages.BaseScreen;
+
+import java.io.File;
+import java.io.IOException;
 
 
 public class AppiumListener
@@ -147,10 +148,18 @@ public class AppiumListener
         //super.onException(throwable, driver);
         logger.info("Something went wrong"+throwable.fillInStackTrace().getMessage());
 
-        int i = (int) (System.currentTimeMillis()/1000%3600);
-        String screenshot = "src/test/screenshots/screen-"+i+".png";
+        /*int b = (int) (System.currentTimeMillis()/1000%3600);
+        String str = "src/test/screenshots/screen-"+b+".png";
         BaseScreen bs = new BaseScreen((AppiumDriver<MobileElement>) driver);
-        bs.takeScreenShot(screenshot);
+        bs.takeScreenShot(str);*/
+        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        int i = (int) (System.currentTimeMillis()/1000%3600);
+        File screenshot = new File("src/test/screenshots/screen-"+i+".png");
+        try{
+            Files.copy(file,screenshot);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
 
 
     }

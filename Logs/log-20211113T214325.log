@@ -1,0 +1,13 @@
+21:43:48 INFO  - Start super scheduler
+21:43:48 INFO  - MethodpinneIconTeststarted
+21:43:49 INFO  - Element was foundBy.xpath: //androidx.appcompat.app.ActionBar.Tab[@content-desc='Swipe']/android.widget.TextView
+21:43:50 INFO  - Element found --->By.xpath: //androidx.appcompat.app.ActionBar.Tab[@content-desc='Swipe']/android.widget.TextView
+21:43:50 INFO  - Element was foundBy.xpath: //*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]
+21:43:52 INFO  - Element found --->By.xpath: //*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]
+21:43:52 INFO  - Element was foundBy.xpath: //*[@resource-id='android:id/text1']
+21:43:52 INFO  - Element found --->By.xpath: //*[@resource-id='android:id/text1']
+21:43:53 INFO  - Element was foundBy.xpath: //*[@resource-id='android:id/text1']
+21:43:53 INFO  - Element found --->By.xpath: //*[@resource-id='android:id/text1']
+21:43:54 INFO  - Element was foundBy.xpath: //*[@resource-id='android:id/text1']
+21:43:55 INFO  - Element found --->By.xpath: //*[@resource-id='android:id/text1']
+21:43:58 INFO  - Stop method ------>pinneIconTest

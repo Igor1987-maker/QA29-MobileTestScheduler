@@ -1,3 +1,4 @@
+/*
 package configuration;
 
 import org.slf4j.LoggerFactory;
@@ -6,24 +7,28 @@ import org.testng.ITestListener;
 import org.slf4j.Logger;
 import org.testng.ITestResult;
 
-
 public class ListenerTestNG implements ITestListener {
 
  Logger logger = LoggerFactory.getLogger(ListenerTestNG.class);
-
+    public ListenerTestNG() {
+        super();
+    }
     @Override
     public void onTestStart(ITestResult result) {
         ITestListener.super.onTestStart(result);
+        logger.info("[LTNG] : Start of test " +result.getName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
         ITestListener.super.onTestSuccess(result);
+        logger.info("[LTNG] : Start success of test " +result.getName());
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
+        logger.info("[LTNG] : On failure of test " +result.getName());
     }
 
     @Override
@@ -51,3 +56,4 @@ public class ListenerTestNG implements ITestListener {
         ITestListener.super.onFinish(context);
     }
 }
+*/

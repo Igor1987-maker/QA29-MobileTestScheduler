@@ -1,0 +1,9 @@
+16:43:21 INFO  - Start super scheduler
+16:43:21 INFO  - MethodloginTeststarted
+16:43:21 INFO  - [LTNG] : Start of test loginTest
+16:44:36 INFO  - [LTNG] : On failure of test loginTest
+16:44:36 INFO  - Stop method ------>loginTest
+16:44:36 INFO  - MethodloginTestWithCredentialsstarted
+16:44:36 INFO  - [LTNG] : Start of test loginTestWithCredentials
+16:44:56 INFO  - [LTNG] : On failure of test loginTestWithCredentials
+16:44:56 INFO  - Stop method ------>loginTestWithCredentials

@@ -1,0 +1,13 @@
+09:29:08 INFO  - Start super scheduler
+09:29:08 INFO  - MethodloginTeststarted
+09:29:09 INFO  - Element was foundBy.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/app_version_res']
+09:29:29 INFO  - Element found --->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/app_version_res']
+09:29:29 INFO  - Something went wrongAn element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3UOK3PE', ip: '10.0.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, deviceName: Galaxy, platformName: android, platformVersion: 8.1}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1136, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: ff964b79-02de-4aa4-a3af-6011b9aad0e0
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/app_version_res']}
+09:29:31 INFO  - Stop method ------>loginTest

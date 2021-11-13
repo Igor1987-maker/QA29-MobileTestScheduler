@@ -1,16 +1,18 @@
 package scheduler;
 
+import configuration.AppiumListener;
 import configuration.ConfigScheduler;
 import configuration.MyDataProvider;
 import dto.Credentials;
 import dto.FieldsWithoutLombok;
 import org.testng.Assert;
+//import configuration.ListenerTestNG;
 import org.testng.annotations.*;
 import pages.SplashScreen;
 
 
-
-
+//@Listeners(AppiumListener.class)
+//@Listeners(ListenerTestNG.class)
 public class LoginTest extends ConfigScheduler {
 
     @Test

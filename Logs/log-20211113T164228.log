@@ -1,0 +1,7 @@
+16:42:56 INFO  - Start super scheduler
+16:42:56 INFO  - MethoddragTestScreenstarted
+16:42:57 INFO  - Element was foundBy.xpath: //*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]
+16:42:57 INFO  - Element found --->By.xpath: //*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]
+16:42:58 INFO  - Element was foundBy.xpath: //*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/drag_handle']
+16:43:00 INFO  - Element found --->By.xpath: //*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/drag_handle']
+16:43:12 INFO  - Stop method ------>dragTestScreen

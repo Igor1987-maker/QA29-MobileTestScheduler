@@ -42,7 +42,7 @@ public class ConfigScheduler {
 
 
         driver = new AppiumDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-      //  driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver, new AppiumListener());
+        driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver, new AppiumListener());
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         logger.info("Start super scheduler");
 
