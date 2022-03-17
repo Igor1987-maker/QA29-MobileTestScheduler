@@ -23,7 +23,7 @@ public class HomeScreen extends BaseScreen {
 
 
     public boolean isFabAddButtonPresent() {
-        new WebDriverWait(driver, 30)
+         new WebDriverWait(driver, 30)
                 .until(ExpectedConditions.visibilityOf(fabAdd));
         return fabAdd.isDisplayed();
     }
